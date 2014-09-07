@@ -40,7 +40,7 @@
 	if (/\/wiki\/[a-zA-Z0-9%_]/.test(window.location.pathname)) {
 		document.getElementById("error").remove();
 		var title = window.location.pathname.replace("/wiki/", "").replace("/", "");
-		document.getElementById("whats-the-title").href = "/wiki/" + title;
+		document.getElementById("whats-the-title").href = "https://github.com/xuanxuebaike/xuanxuebaike.github.io/edit/master/_posts/2014-08-25-" + title + ".md";
 		document.getElementById("whats-the-title").innerHTML = decodeURI(title);
 	} else {
 		document.getElementById("create").remove();
